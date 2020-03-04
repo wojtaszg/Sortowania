@@ -21,8 +21,7 @@ int main()
 	//wypelnijLosowo(wsk,Rozmiar);
 	wypelnijMalejaco(wsk,Rozmiar);
 
-	cout<<"\n\nU³o¿enie przed sortowaniem = "<<sprawdzSortowanie(wsk, Rozmiar);
-	//wyswietlTablice(wsk,0,Rozmiar);
+	cout<<"\n\nUÅ‚oÅ¼enie przed sortowaniem = "<<sprawdzSortowanie(wsk, Rozmiar);
 	
 	double start = clock();
 
@@ -35,10 +34,9 @@ int main()
 		//hybrydowe(wsk[i],Rozmiar);
 	}
 	double czas = (clock() - start) / CLOCKS_PER_SEC;
-	cout<<"\nU³o¿enie po sortowaniu = "<< sprawdzSortowanie(wsk, Rozmiar);
-	//wyswietlTablice(wsk,0,Rozmiar);
+	cout<<"\nUÅ‚oÅ¼enie po sortowaniu = "<< sprawdzSortowanie(wsk, Rozmiar);
 	cout << "\n\n" << "Czas sortowania 100 tablic: " << czas <<" sec" <<endl;
-	cout<<"Œredni czas sortowania 1 tablicy: "<<czas/100<<" sec"<<endl;
+	cout<<"Åšredni czas sortowania 1 tablicy: "<<czas/100<<" sec"<<endl;
 	for(int i=0; i<100; i++)
 	delete [] wsk[i];
 	delete [] wsk;	
